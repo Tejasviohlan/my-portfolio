@@ -2,8 +2,8 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tejasviohlan.github.io/my-portfolio/",
   "dependencies": {
-    "homepage": "https://tejasviohlan.github.io/my-portfolio",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.11.4",
