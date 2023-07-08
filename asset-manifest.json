@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/static/js/main.b793d89b.js",
+    "static/media/bktw.png": "/static/media/bktw.4dccc17a10c5cec45ddd.png",
+    "static/media/hand.png": "/static/media/hand.be32a65ac7a420bdcce4.png",
+    "static/media/volb.png": "/static/media/volb.0aa230b89d8abd2c771a.png",
+    "static/media/tech2.jpg": "/static/media/tech2.d7e58064455890b87c23.jpg",
+    "static/media/BG-WALL.webp": "/static/media/BG-WALL.f20bd5f9169750e82c8f.webp",
+    "index.html": "/index.html",
+    "main.b793d89b.js.map": "/static/js/main.b793d89b.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.b793d89b.js"
+  ]
+}
