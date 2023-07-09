@@ -13,12 +13,17 @@ const PWrapper = styled.div`
     justify-content:center;
     left: 15px;
     top : 15px;
+
+    @media only screen and (max-width: 480px) {
+        width: 150px;
+        height: 150px;
+      }
 `;
 
 export const ProfilePicture = () => {
-  return (
-      <PWrapper>
-          <FileUpload />
-      </PWrapper>
-  )
+    return (
+        <PWrapper>
+            <FileUpload />
+        </PWrapper>
+    )
 }

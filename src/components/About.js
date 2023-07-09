@@ -288,7 +288,6 @@ const Address = styled.div`
   border-radius: 1em;
 
   @media only screen and (max-width: 480px) {
-    max-width: 400px;
     font-size: 3vh;
   }
 

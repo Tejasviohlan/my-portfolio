@@ -7,6 +7,13 @@ import { Experiences } from './Experiences';
 import { Projects } from './Projects';
 import { Skills } from './Skills';
 
+const Container = styled.div`
+  min-width: 400px;
+  overflow-x: auto;
+
+
+`;
+
 const Wrapper = styled.div`
   margin-right: 10%;
   margin-left: 10%;
@@ -24,7 +31,7 @@ const EmptyDiv = styled.div`
 
 export const Home = () => {
   return (
-    <>
+    <Container>
     <Navbar />
     <Wrapper>
         <EmptyDiv />
@@ -33,7 +40,7 @@ export const Home = () => {
         <Skills />
         <About />
     </Wrapper>
-    </>
+    </Container>
   )
 }
 
