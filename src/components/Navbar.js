@@ -17,6 +17,11 @@ const Link = styled.a`
   color: white;
   margin: 20px;
   margin-top: 10px;
+
+  @media only screen and (max-width: 480px) {
+    font-size:15px;
+    margin: 10px;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -57,7 +62,7 @@ const HamLines = styled.div`
           top: 1vh;
       }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 480px) {
         display: flex ;
         top: 1vh;
     }
@@ -74,10 +79,11 @@ const Line = styled.div`
         display: flex;
       }
 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 480px) {
     
         display: flex;
         height: 5px;
+        width: 30px;
       }
 `;
 
@@ -101,6 +107,17 @@ const NavBarElements = styled.div`
         z-index: 1;
         
   }
+
+  @media only screen and (min-width: 480px) {
+    display: flex;
+    align-items: center;
+    visibility: visible !important;
+    transform: none !important;
+    transition: none !important;
+    z-index: 1;
+    height: 10%;
+    
+}
 `
 
 const NavBarElementsWrapper = styled.div`
