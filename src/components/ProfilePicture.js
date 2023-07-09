@@ -14,9 +14,15 @@ const PWrapper = styled.div`
     left: 15px;
     top : 15px;
 
-    @media only screen and (max-width: 480px) {
+
+    @media only screen and (max-width: 780px) {
         width: 150px;
         height: 150px;
+      }
+
+    @media only screen and (max-width: 480px) {
+        width: 90px;
+        height: 90px;
       }
 `;
 

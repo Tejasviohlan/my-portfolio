@@ -21,7 +21,7 @@ const EmptyDiv = styled.div`
     height: 100%;
     width: 100%;
     background-image: url(${coderImage});
-    background-size: cover;
+    background-size: contain;
     height: 400px;
     z-index: -1;
 `;

@@ -6,6 +6,7 @@ import { ProfilePicture } from './ProfilePicture';
 const Container = styled.div`
   z-index: 1;
   position: fixed;
+
 `;
 
 const Link = styled.a`
@@ -32,7 +33,13 @@ const Wrapper = styled.div`
 
     @media only screen and (max-width: 800px) {
       z-index:0;
-  }
+      height: 40px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      z-index:0;
+      height: 40px;
+    }
   }
   
 `;
@@ -65,6 +72,12 @@ const Line = styled.div`
     @media only screen and (max-width: 800px) {
     
         display: flex;
+      }
+
+    @media only screen and (max-width: 800px) {
+    
+        display: flex;
+        height: 5px;
       }
 `;
 

@@ -12,9 +12,14 @@ const Image = styled.img`
     width: 200px;
     border-radius: 50%;
 
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 780px) {
         width: 150px;
         height: 150px;
+      }
+
+    @media only screen and (max-width: 480px) {
+        width: 90px;
+        height: 90px;
       }
 `;
 

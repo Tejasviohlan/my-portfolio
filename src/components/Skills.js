@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const SkillWrapper = styled.div`
   padding : 18px;
   font-weight : 700;
+  //min-width: 320px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   overflow-x: auto;
 `;
@@ -12,6 +13,7 @@ const SkillWrapper = styled.div`
 const SkillStyle = styled.div`
   display: flex;
   justify-content: space-between;
+  min-width: 420px;
 `;
 
 const FlexBox = styled.div`
@@ -24,8 +26,14 @@ const H2 = styled.h1`
   margin : 0px;
   font-size: 3vh;
 
-  @media only screen and (max-width: 480px) {
+
+  @media only screen and (max-width: 820px) {
     font-size: 2vh;
+  }
+
+  @media only screen and (max-width: 680px) {
+    font-size: 1vh;
+    min-width: 20px;
   }
 
 `;
@@ -42,11 +50,16 @@ const Scale = styled.div`
   width: 25%;
   margin: 10px;
   padding: 20px;
-  font-size: 30px;
+  font-size: 3vh;
   postion: absolute;
 
-  @media only screen and (max-width: 480px) {
-    font-size: 80%;
+  @media only screen and (max-width: 820px) {
+    font-size: 2vh;
+  }
+
+  @media only screen and (max-width: 680px) {
+    font-size: 1vh;
+    padding-top: 15px;
   }
 `;
 
