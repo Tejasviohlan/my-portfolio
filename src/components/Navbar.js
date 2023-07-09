@@ -54,7 +54,7 @@ const HamLines = styled.div`
     display: none;
     flex-direction: column;
     right: 10px;
-    margin-top: 1.5%;
+    margin-top: 1px;
     cursor: pointer;
 
     @media only screen and (max-width: 800px) {
@@ -89,38 +89,15 @@ const Line = styled.div`
 
 const NavBarElements = styled.div`
 
-  @media only screen and (max-width: 800px) {
-    
-        display: flex;
-        visibility: hidden;
-        flex-direction: column;
-        position: relative;
-        z-index: 0;
-  }
-
-  @media only screen and (min-width: 800px) {
-        display: flex;
-        align-items: center;
-        visibility: visible !important;
-        transform: none !important;
-        transition: none !important;
-        z-index: 1;
-        
-  }
-
-  @media only screen and (min-width: 480px) {
-    display: flex;
-    align-items: center;
-    visibility: visible !important;
-    transform: none !important;
-    transition: none !important;
-    z-index: 1;
-    height: 10%;
-    
-}
 `
 
 const NavBarElementsWrapper = styled.div`
+
+  margin-top: 2%;
+  display: flex;
+  position: relative;
+  background: #100F10;
+  //visibility: visible;
 
   @media only screen and (max-width: 800px) {
     
@@ -128,9 +105,21 @@ const NavBarElementsWrapper = styled.div`
         flex-direction: column;
         position: relative;
         background: #100F10;
-        z-index: 1;
-        top: -15px;
+        //z-index: 1;
+        margin-top: -15px;
   }
+
+  @media only screen and (min-width: 800px) {
+    
+    display: flex;
+    position: relative;
+    background: #100F10;
+    margin-top: 2%;
+    visibility: visible !important;
+    transform: none !important;
+    transition: none !important;
+    z-index: 1;
+}
 `
 
 const Navbar = () => {
@@ -138,6 +127,7 @@ const Navbar = () => {
   const WrapperHead = useRef();
   const LineHead = useRef();
   const [open,setOpen] = useState(false);
+
 
   useEffect(() => {
     if(open){
@@ -159,8 +149,8 @@ const Navbar = () => {
     <Container>
         <Wrapper>
             <ProfilePicture />
-            <NavBarElements ref={WrapperHead}>
-              <NavBarElementsWrapper onClick={() => setOpen(!open)}>
+            <NavBarElements>
+              <NavBarElementsWrapper ref={WrapperHead} onClick={() => setOpen(!open)}>
                 <Link href='#Home' >Home</Link>
                 <Link href='#Experiences' >Experiences</Link>
                 <Link href='#Projects' >Projects</Link>
