@@ -327,13 +327,13 @@ export const About = () => {
                 <FlipBox>
                     <FlipBoxInner>
                       <FlipBoxFront style={{backgroundColor: "white"}}><Image src= {VOLB}/></FlipBoxFront>
-                      <FlipBoxBack>M.D.N PUBLIC SCHOOL (ROHTAK) <br /> CGPA - 9.4 <br /> YEAR OF PASSING - 2014</FlipBoxBack>
+                      <FlipBoxBack>CAPTAIN OF SCHOOL VOLLEYBALL TEAM <br /> PLAYED AT STATE LEVEL</FlipBoxBack>
                     </FlipBoxInner>
                 </FlipBox>
                 <FlipBox>
                     <FlipBoxInner>
                       <FlipBoxFront style={{backgroundColor: "white"}}><Image src= {HAND}/></FlipBoxFront>
-                      <FlipBoxBack>M.D.N PUBLIC SCHOOL (ROHTAK) <br /> CGPA - 9.4 <br /> YEAR OF PASSING - 2014</FlipBoxBack>
+                      <FlipBoxBack>CAPTAIN OF SCHOOL HANDBALL TEAM <br /> POSITION AT STATE LEVEL</FlipBoxBack>
                     </FlipBoxInner>
                 </FlipBox>
               </Sports>

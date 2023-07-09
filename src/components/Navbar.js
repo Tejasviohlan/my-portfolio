@@ -112,6 +112,7 @@ const NavBarElementsWrapper = styled.div`
         position: relative;
         background: #100F10;
         z-index: 1;
+        top: -15px;
   }
 `
 

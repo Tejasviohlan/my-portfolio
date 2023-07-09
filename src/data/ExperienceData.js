@@ -63,7 +63,7 @@ export const experiences = [
             {
                 id : 3.2,
                 name : "JSON Schema Validator Service",
-                description : "This is SpringBoot based microservice which take JSON as input and schema version against which it needs to be verified. It fetch the schema from S3 (do catching ) on run and verify the JSON and returns the result."
+                description : "This is SpringBoot based microservice which take JSON as input and schema version against which it needs to be verified. It fetch the schema from S3 (do caching ) on run and verify the JSON and returns the result."
             }
         ]
     }
