@@ -68,7 +68,11 @@ const DateFromat = styled.p`
 const ProjectsWrapper = styled.div`
   padding-top : 15px;
   display : flex;
+  flex-direction: row;
 
+  @media only screen and (max-width: 980px) {
+    flex-direction: column;
+  }
 `;
 
 const H1 = styled.h1`
@@ -86,12 +90,20 @@ const H2 = styled.h2`
   background-clip: content-box;
   background-color: lightgray;
 
+  @media only screen and (max-width: 480px) {
+    font-size: 80%;
+  }
+
 `;
 
 const H3 = styled.h3`
   text-align : center;
   margin : 0px;
   margin-bottom : 18px;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 80%;
+  }
 
 `;
 
@@ -110,7 +122,7 @@ const Project = styled.div`
 export const Experiences = () => {
   return (
     <Wrapper id="Experiences">
-      <H1>EXPERIECNES</H1>
+      <H1>EXPERIENCES</H1>
      {experiences.map((experience) => 
       <React.Fragment key={experience.id}>
         <H2 >{experience.companyName} &nbsp; ({experience.location}) <div>FINTECH</div></H2>

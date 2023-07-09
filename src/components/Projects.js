@@ -34,6 +34,10 @@ const H1 = styled.h1`
 
 const H2 = styled.h2`
   margin : 0px;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 80%;
+  }
 `;
 
 export const Projects = () => {

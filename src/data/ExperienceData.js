@@ -1,7 +1,7 @@
 export const experiences = [
     {
         id : 1,
-        companyName : "Capri global",
+        companyName : "Capri Global",
         from : "2022-12-09",
         to : "Present",
         role : "Software Engineer",
@@ -11,7 +11,7 @@ export const experiences = [
             {
                 id : 1.1,
                 name : "AutoPay/AutoDebit",
-                description : "A system which is responsible to create mandate/subscription of user based on Loan disburse to customer and auto deduct EMIs on predifned date with predefined amount with a flexubulity of ONDEMAND collections."
+                description : "A system which is responsible to create mandate/subscription of user based on Loan disburse to customer and auto deduct EMIs on predifned date with predefined amount with a flexibility of ONDEMAND collections."
             }
         ]
     },
