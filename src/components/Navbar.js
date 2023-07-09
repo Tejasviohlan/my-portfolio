@@ -4,7 +4,8 @@ import styled from 'styled-components'
 import { ProfilePicture } from './ProfilePicture';
 
 const Container = styled.div`
-
+  z-index: 1;
+  position: fixed;
 `;
 
 const Link = styled.a`
@@ -24,14 +25,20 @@ const Wrapper = styled.div`
     padding: 5px;
     height: 60px;
     background-color: #100F10;
-    position: relative;
+    position: fixed;
+    z-index:1;
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: 800px) {
+      z-index:0;
+  }
+  }
   
 `;
 
 const HamLines = styled.div`
-    position: absolute;
+    position: fixed;
     display: none;
     flex-direction: column;
     right: 10px;
@@ -40,13 +47,12 @@ const HamLines = styled.div`
 
     @media only screen and (max-width: 800px) {
           display: flex ;
-          top: 2vh;;
+          top: 1vh;
       }
 
     @media only screen and (max-width: 400px) {
         display: flex ;
-        top: 2vh;
-        position: fixed;
+        top: 1vh;
     }
 `;
 
@@ -70,7 +76,7 @@ const NavBarElements = styled.div`
         visibility: hidden;
         flex-direction: column;
         position: relative;
-        z-index: 1;
+        z-index: 0;
   }
 
   @media only screen and (min-width: 800px) {
@@ -123,7 +129,7 @@ const Navbar = () => {
         <Wrapper>
             <ProfilePicture />
             <NavBarElements ref={WrapperHead}>
-              <NavBarElementsWrapper>
+              <NavBarElementsWrapper onClick={() => setOpen(!open)}>
                 <Link href='#Home' >Home</Link>
                 <Link href='#Experiences' >Experiences</Link>
                 <Link href='#Projects' >Projects</Link>

@@ -9,9 +9,6 @@ import { Skills } from './Skills';
 
 const Container = styled.div`
   min-width: 400px;
-  overflow-x: auto;
-
-
 `;
 
 const Wrapper = styled.div`

@@ -50,7 +50,7 @@ const AboutContentWrapper = styled.div`
 
 `;
 const Automobile = styled.div`
-  //width: 27%;
+  min-width : 300px;
   flex: 1;
   height : 60%;
   background: white;
@@ -73,11 +73,11 @@ const Automobile = styled.div`
 
 
 const Schools = styled.div`
-  //width : 27%;
+  min-width : 300px;
   flex:1;
   height : 70%;
   background: white;
-  font-size: 30px;
+  font-size: 3vh;
   font-weight: 500;
   box-shadow: -30px 46px 75px 16px black;
   //transform: rotate(10deg);
@@ -95,7 +95,7 @@ const Schools = styled.div`
 `;
 
 const Extras = styled.div`
-  //width : 27%;
+  min-width : 300px;
   flex:1;
   height : 67%;
   background: white;
@@ -134,6 +134,7 @@ const Hobbies = styled.div`
   font-size: 20px;
   display: flex;
   flex-wrap: wrap;
+  z-index: 0;
 `;
 
 const HobbiesBox =styled.div`
@@ -273,7 +274,7 @@ const H3 = styled.h3`
 `;
 
 const Address = styled.div`
-  //max-width : 85%;
+  min-width : 300px;
   height : 45%;
   background: white;
   font-size: 4vh;
@@ -295,6 +296,8 @@ const Address = styled.div`
     font-size: 3vh;
     margin-top:10%;
     transform: rotate(3deg);
+    justify-content: center;
+    align-items: center;
   }
 
 `;
@@ -408,7 +411,7 @@ export const About = () => {
                 <br />
                 MOBILE - +919050433933
               </Content>
-              <Hook style={{position : "relative", height: "45%", top : "-35%", width: "2vh", minWidth: "0vh"}}/>
+              {/* <Hook2 /> */}
             </Address>
           </AboutContentWrapper>
       </Wrapper>
