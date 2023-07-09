@@ -11,7 +11,7 @@ export const experiences = [
             {
                 id : 1.1,
                 name : "AutoPay/AutoDebit",
-                description : "A system which is responsible to create mandate/subscription of user based on Loan disburse to customer and auto deduct EMIs on predifned date with predefined amount with a flexibility of ONDEMAND collections."
+                description : "A system which is responsible to create mandate/subscription of user based on Loan disburse to customer and auto deduct EMIs on predefined date with predefined amount with a flexibility of ONDEMAND collections."
             }
         ]
     },
@@ -27,22 +27,22 @@ export const experiences = [
             {
                 id : 2.1,
                 name : "Date Sync System",
-                description : "This system migrates real time data from PHOENIX (new system) to ERP (legacy system) with great amount of fault tolrance and zero data loss in case of failure. Also notification system is well integrated to notify about the failure to the respective parties."
+                description : "This system migrates real time data from PHOENIX (new system) to ERP (legacy system) with great amount of fault tolerance and zero data loss in case of failure. Also notification system is well integrated to notify about the failure to the respective parties."
             },
             {
                 id : 2.2,
-                name : "Secuirty Group System",
-                description : "This system can be relate with access control systems. Here users are assigned with a security group on the basis of their role and thus data enabled for that secuorty gorup is only visible to the users."
+                name : "Security Group System",
+                description : "This system can be relate with access control systems. Here users are assigned with a security group on the basis of their role and thus data enabled for that security group is only visible to the users."
             },
             {
                 id : 2.3,
                 name : "OTP Service",
-                description : "This is centerlised service responsible for user authentication using OTP."
+                description : "This is centeralised service responsible for user authentication using OTP."
             },
             {
                 id : 2.4,
                 name : "Temp Role Assigment Feature",
-                description : "This feature helps consumers/users to have some other role temprorily along with their roles for some delegation days. After delegation days expiration user will asssign with their actual role."
+                description : "This feature helps consumers/users to have some other role temporarily along with their roles for some delegation days. After delegation days expiration user will asssign with their actual role."
             }
         ]
     },
@@ -58,12 +58,12 @@ export const experiences = [
             {
                 id : 3.1,
                 name : "Communication Management Sub System (CMMS)",
-                description : "This system is responsible for sending communication to the customers. It was omini-channel system which identify type of communication and prepare a pdf to be sent to the user using SmarComm integartions."
+                description : "This system is responsible for sending communication to the customers. It was omini-channel system which identify type of communication and prepare a pdf to be sent to the user using SmarComm integrations."
             },
             {
                 id : 3.2,
                 name : "JSON Schema Validator Service",
-                description : "This is SpringBoot based microservice which take JSON as input and schema version against which it needs to be verified. It fetch the schema from S3 (do caching ) on run and verify the json and returns the result."
+                description : "This is SpringBoot based microservice which take JSON as input and schema version against which it needs to be verified. It fetch the schema from S3 (do catching ) on run and verify the JSON and returns the result."
             }
         ]
     }

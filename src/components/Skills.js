@@ -25,7 +25,7 @@ const H2 = styled.h1`
   font-size: 3vh;
 
   @media only screen and (max-width: 480px) {
-    font-size: 80%;
+    font-size: 2vh;
   }
 
 `;

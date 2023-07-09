@@ -53,6 +53,14 @@ const Text = styled.p`
   margin : 20px 20px 20px 20px;
   display : flex;
   justify-content: space-between;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 80%;
+  }
+
+  @media only screen and (max-width: 980px) {
+    font-size: 100%;
+  }
   
 `;
 
@@ -62,6 +70,14 @@ const DateFromat = styled.p`
   margin-top : 0px;
   display : flex;
   justify-content: space-between;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: 980px) {
+    font-size: 80%;
+  }
   
 `;
 

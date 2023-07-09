@@ -16,6 +16,14 @@ const Text = styled.p`
   margin : 20px 20px 20px 0px;
   display : flex;
   justify-content: space-between;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 80%;
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 100%;
+  }
   
 `;
 
@@ -23,6 +31,7 @@ const TsWrapper = styled.p`
   display : flex;
   justify-content: space-between;
   background-color: lightgray;
+
   
 `;
 
