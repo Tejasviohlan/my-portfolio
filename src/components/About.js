@@ -110,7 +110,7 @@ const Schools = styled.div`
   }
 
   @media only screen and (max-width: 780px) {
-    height: 43%;
+    height: 50%;
   }
 
 `;
@@ -136,13 +136,6 @@ const Extras = styled.div`
     transform: rotate(-3deg);
   }
 
-  @media only screen and (max-width: 480px) {
-    height: 23%;
-  }
-
-  @media only screen and (max-width: 780px) {
-    height: 43%;
-  }
 `;
 
 const Education = styled.div`
@@ -274,8 +267,16 @@ const Hook3 = styled.div`
   position: relative;
   top : -140px;
 
-  @media only screen and (max-width: 1080px) {
-    top: -180px;
+  
+
+  @media only screen and (max-width: 480px) {
+    width: 2%;
+    top: -120px;
+  }
+
+  @media only screen and (max-width: 780px) {
+    width: 2%;
+    top: -120px;
   }
 `;
 
@@ -335,6 +336,7 @@ const Address = styled.div`
   justify-content: space-between;
   z-index: -1;
   border-radius: 1em;
+  width: 80%;
 
   @media only screen and (max-width: 480px) {
     font-size: 3vh;
