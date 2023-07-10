@@ -46,7 +46,7 @@ const H1 = styled.h1`
 
 const Scale = styled.div`
   border-radius: 5px 20px 5px;
-  background: ${(props) => props.rating >= props.defaultRating ? "green" : "lightgrey"};;
+  background: ${(props) => props.rating >= props.defaultRating ? "orange" : "lightgrey"};;
   width: 25%;
   margin: 10px;
   padding: 20px;
