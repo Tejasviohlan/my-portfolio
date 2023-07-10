@@ -162,10 +162,10 @@ const FlipBoxInner = styled.div`
   height: 100%;
   text-align: center;
   &:hover {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
   };
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+  -webkit-transition: transform 0.8s;
+  -webkit-transform-style: preserve-3d;
 
 `;
 
@@ -191,7 +191,7 @@ const FlipBoxBack = styled.div`
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
   justify-content: space-between;
   justify-content: center;
   display: flex;
@@ -280,7 +280,7 @@ const Address = styled.div`
   font-size: 4vh;
   font-weight: 500;
   box-shadow: -30px 46px 75px 16px black;
-  transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
   margin: 5%;
   //position: relative;
   display: flex;
