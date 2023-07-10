@@ -187,11 +187,12 @@ const FlipBoxInner = styled.div`
   width: 100%;
   height: 100%;
   text-align: center;
-  &:hover {
-    -webkit-transform: rotateY(180deg);
-  };
-  -webkit-transition: transform 0.8s;
-  -webkit-transform-style: preserve-3d;
+
+  // &:hover {
+  //   -webkit-transform: rotateY(180deg);
+  // };
+  // -webkit-transition: transform 0.8s;
+  // -webkit-transform-style: preserve-3d;
 
 `;
 
@@ -201,11 +202,15 @@ const FlipBoxFront = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  // -webkit-backface-visibility: hidden;
+  // backface-visibility: hidden;
   justify-content: center;
   display: flex;
   align-items: center;
+
+  &:hover {
+    opacity:0;
+  }
   
 `;
 
@@ -215,13 +220,19 @@ const FlipBoxBack = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: rotateY(180deg);
+  // -webkit-backface-visibility: hidden;
+  // backface-visibility: hidden;
+  // -webkit-transform: rotateY(180deg);
   justify-content: space-between;
   justify-content: center;
   display: flex;
   align-items: center;
+
+  opacity:0;
+
+  &:hover {
+    opacity:1;
+  }
 `;
 
 const Thread = styled.div`
@@ -299,10 +310,11 @@ const Image = styled.img`
   height: 100%;
   object-fit: scale-down;
   border-radius: 50%;
+  opacity:1;
   &:hover {
     opacity:0;
   }
-  z-index:1;
+  //z-index:1;
 
   @media only screen and (max-width: 780px) {
     border-radius: 1em;
@@ -438,22 +450,22 @@ export const About = () => {
               <Hobbies>
                 <HobbiesBox>
                   <H3>TRAVELLING</H3>
-                  <Image style={{objectFit: "cover"}}src='https://media.istockphoto.com/id/1285301614/photo/young-man-arms-outstretched-by-the-sea-at-sunrise-enjoying-freedom-and-life-people-travel.jpg?s=612x612&w=0&k=20&c=0QW6GnkuFNYcPZhy26XVHuTc2avJTK8u6l_1iT0SlZk='/>
+                  <Image style={{objectFit: "cover",zIndex:1}}src='https://media.istockphoto.com/id/1285301614/photo/young-man-arms-outstretched-by-the-sea-at-sunrise-enjoying-freedom-and-life-people-travel.jpg?s=612x612&w=0&k=20&c=0QW6GnkuFNYcPZhy26XVHuTc2avJTK8u6l_1iT0SlZk='/>
                 </HobbiesBox>
                 <HobbiesBox >
                 <H3>TECHNOLOGY</H3>
-                <Image style={{objectFit: "cover"}}src='https://thumbs.dreamstime.com/b/internet-information-technology-businessman-hand-showing-concept-75784736.jpg' />
+                <Image style={{objectFit: "cover",zIndex:1}}src='https://thumbs.dreamstime.com/b/internet-information-technology-businessman-hand-showing-concept-75784736.jpg' />
                 </HobbiesBox>
                 {/* <HobbiesBox>
                   TREKKING
                 </HobbiesBox> */}
                 <HobbiesBox>
                 <H3>AUTOMOBILE</H3>
-                <Image style={{objectFit: "cover"}}src='https://assets.gqindia.com/photos/62fe0504586d8ec9846c5130/master/w_1920,h_1080,c_limit/Bugatti-La-Voiture-Noire.jpg' />
+                <Image style={{objectFit: "cover",zIndex:1}}src='https://assets.gqindia.com/photos/62fe0504586d8ec9846c5130/master/w_1920,h_1080,c_limit/Bugatti-La-Voiture-Noire.jpg' />
                 </HobbiesBox>
                 <HobbiesBox>
                 <H3>OUTDOOR <br />SPORTS</H3>
-                <Image style={{objectFit: "cover"}}src='https://img.lovepik.com/photo/20211123/small/lovepik-outdoor-sport-picture_500831164.jpg' />
+                <Image style={{objectFit: "cover",zIndex:1}}src='https://img.lovepik.com/photo/20211123/small/lovepik-outdoor-sport-picture_500831164.jpg' />
                 </HobbiesBox>
               </Hobbies>
               <Hook />
